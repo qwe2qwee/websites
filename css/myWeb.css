@@ -375,6 +375,11 @@ section.skills .skill .items {
   display: none;
 }
 
+section.skills .skill .items h5 {
+  text-transform: uppercase;
+  letter-spacing: calc(0.1rem - 1px);
+}
+
 section.skills .skill .items.show-items {
   display: block;
 }
@@ -766,6 +771,7 @@ footer .countainer .socials a:hover {
 
   nav button#close-btn {
     display: none;
+    background-color: var(--color-white);
   }
 
   /* ==========LANDING SECTION============= */
