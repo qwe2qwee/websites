@@ -4,6 +4,7 @@ const menu = document.querySelector(' nav .countainer ul')
 const LI = document.querySelectorAll('nav .countainer ul li')
 const skillitems = document.querySelectorAll('section.skills .skill')
 const InputBtn = document.querySelector('form input.btn')
+const formm = document.querySelector('.contact form')
 
 const swiper = new Swiper('.swiper', {
   scrollbar: {
@@ -14,7 +15,10 @@ const swiper = new Swiper('.swiper', {
 
 
 
-InputBtn.addEventListener("click", () => window.location.reload())
+InputBtn.addEventListener("click", () => {
+  formm.submit()
+  setTimeout(4000, formm.reset())
+})
 
 
 
