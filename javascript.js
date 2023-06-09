@@ -3,7 +3,6 @@ const closeBtn = document.querySelector('#close-btn')
 const menu = document.querySelector(' nav .countainer ul')
 const LI = document.querySelectorAll('nav .countainer ul li')
 const skillitems = document.querySelectorAll('section.skills .skill')
-const Inputs = document.querySelectorAll('form .cle')
 const InputBtn = document.querySelector('form input.btn')
 
 const swiper = new Swiper('.swiper', {
@@ -15,9 +14,7 @@ const swiper = new Swiper('.swiper', {
 
 
 
-InputBtn.addEventListener("click", () => Inputs.forEach(onn => {
-  onn.value = ''
-}))
+InputBtn.addEventListener("click", () => window.location.reload())
 
 
 
